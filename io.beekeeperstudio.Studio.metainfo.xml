@@ -12,26 +12,24 @@
     <description>
         <p>A modern, easy to use, and good looking SQL client for MySQL, Postgres, SQLite, SQL
             Server, and more.</p>
-        <p>
-            <ul>
-                <li>Connect Through Firewalls: Encrypt your connection with SSL, or tunnel through
-                    SSH. Save a connection password and Beekeeper Studio will encrypt it.</li>
-                <li>SQL Auto Completion: Our built-in editor provides syntax highlighting and
-                    auto-complete suggestions for your tables so you can work quickly and easily.</li>
-                <li>Open Lots of Tabs: Open dozens of tabs so you can work quickly without having to
-                    switch windows. Table DDL and data views get their own tabs too!</li>
-                <li>Save SQL Queries For Later: Easily save and organize commonly used queries so
-                    you can use them again and again across all your connections.</li>
-                <li>Edit Table Data: Fast and simple table editing with the ability to stage
-                    changes.</li>
-                <li>Create Tables Without Writing SQL: Beekeeper's SQL table creator lets you
-                    create, edit, and delete table columns in just a few clicks. Need to change a
-                    table, or add indexes and relations? No problem, Beekeeper Studio has you
-                    covered.</li>
-                <li>Export Data: Export a table to CSV, JSON, JSONL, or SQL with just a few clicks.
-                    Optionally apply filters to export only the data you need.</li>
-            </ul>
-        </p>
+        <ul>
+            <li>Connect Through Firewalls: Encrypt your connection with SSL, or tunnel through
+                SSH. Save a connection password and Beekeeper Studio will encrypt it.</li>
+            <li>SQL Auto Completion: Our built-in editor provides syntax highlighting and
+                auto-complete suggestions for your tables so you can work quickly and easily.</li>
+            <li>Open Lots of Tabs: Open dozens of tabs so you can work quickly without having to
+                switch windows. Table DDL and data views get their own tabs too!</li>
+            <li>Save SQL Queries For Later: Easily save and organize commonly used queries so
+                you can use them again and again across all your connections.</li>
+            <li>Edit Table Data: Fast and simple table editing with the ability to stage
+                changes.</li>
+            <li>Create Tables Without Writing SQL: Beekeeper's SQL table creator lets you
+                create, edit, and delete table columns in just a few clicks. Need to change a
+                table, or add indexes and relations? No problem, Beekeeper Studio has you
+                covered.</li>
+            <li>Export Data: Export a table to CSV, JSON, JSONL, or SQL with just a few clicks.
+                Optionally apply filters to export only the data you need.</li>
+        </ul>
     </description>
 
     <url type="homepage">https://www.beekeeperstudio.io/</url>
