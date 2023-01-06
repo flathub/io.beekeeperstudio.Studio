@@ -36,7 +36,19 @@ modules:
       # flatpak doesn't support icons lareger than 512x512
       - rm -rf ${FLATPAK_DEST}/share/icons/hicolor/1024x1024
 
+      - rm -rf squashfs-root/resources/public/icons/win squashfs-root/resources/public/icons/mac
+
       - mv squashfs-root ${FLATPAK_DEST}/beekeeper-studio
+
+      # To allow separate locales
+      # https://searchfox.org/mozilla-central/rev/8a4f55bc09ffc5c25dcb4586c51ae4a9fee77b4c/taskcluster/docker/firefox-flatpak/runme.sh#131-133
+      - |
+        for lang in ${FLATPAK_DEST}/beekeeper-studio/locales/*.pak
+        do
+          locale="$(basename -s .pak $lang)"
+          install -Dm644 -t "${FLATPAK_DEST}/share/runtime/locale/${locale%%-*}/" "$lang"
+          ln -sf "${FLATPAK_DEST}/share/runtime/locale/${locale%%-*}/$(basename $lang)" "${FLATPAK_DEST}/beekeeper-studio/locales/$(basename $lang)"
+        done
     sources:
       - type: file
         only-arches: [x86_64]
