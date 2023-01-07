@@ -5,7 +5,6 @@ sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
 base-version: "22.08"
 command: beekeeper-studio
-separate-locales: false
 rename-icon: beekeeper-studio
 finish-args:
   - --device=dri
