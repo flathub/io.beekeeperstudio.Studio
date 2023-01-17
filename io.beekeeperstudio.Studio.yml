@@ -1,9 +1,9 @@
 app-id: io.beekeeperstudio.Studio
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "22.08"
+base-version: '22.08'
 command: beekeeper-studio
 rename-icon: beekeeper-studio
 finish-args:
@@ -51,29 +51,27 @@ modules:
     sources:
       - type: file
         only-arches: [x86_64]
-        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v3.7.10/Beekeeper-Studio-3.7.10.AppImage
-        sha512: 08324cdf9fe124e965a19c448c313af34a5fa148ff82c78c9401e62133e89163aa4733610acfb9c938a853f4d62f1b03756a57cd4beb19e5fd331f6149c142c8
+        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v3.8.9/Beekeeper-Studio-3.8.9.AppImage
+        sha512: dddf71b7b64a83bc0423b1fddcb06f790e22c4ebfc6b3402049885ee7f085e425d930d178ce99603cf7d67ce0d77d910c5e5f916b285b9a95bf3e3c5aaf3e7fc
         dest_filename: Beekeeper-Studio.AppImage
         x-checker-data:
           type: json
           url: https://api.github.com/repos/beekeeper-studio/beekeeper-studio/releases/latest
           version-query: .tag_name | sub("v"; "")
-          url-query:
-            .assets[] | select(.name == "Beekeeper-Studio-" + $version + ".AppImage")
-            | .browser_download_url
+          url-query: .assets[] | select(.name == "Beekeeper-Studio-" + $version +
+            ".AppImage") | .browser_download_url
       - type: file
         only-arches: [aarch64]
 
-        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v3.7.10/Beekeeper-Studio-3.7.10-arm64.AppImage
-        sha512: e64c7686313c14894053f7078727cf0cf9ab1edc921e61bb27e6e38c08b0b9a1cec00199a041e04170f289decc6c9ff73861215091feffcb56406c64fa8fd6d2
+        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v3.8.9/Beekeeper-Studio-3.8.9-arm64.AppImage
+        sha512: 880114a0a68397c1ce87090210f1320c6e9ba5c177156ba32965830094746bd95d14c020cfee82afda143a983d6edfc28d353df5c39f59f77076687c9d07533e
         dest_filename: Beekeeper-Studio.AppImage
         x-checker-data:
           type: json
           url: https://api.github.com/repos/beekeeper-studio/beekeeper-studio/releases/latest
           version-query: .tag_name | sub("v"; "")
-          url-query:
-            .assets[] | select(.name == "Beekeeper-Studio-" + $version + "-arm64.AppImage")
-            | .browser_download_url
+          url-query: .assets[] | select(.name == "Beekeeper-Studio-" + $version +
+            "-arm64.AppImage") | .browser_download_url
 
       - type: file
         path: beekeeper-studio.sh
