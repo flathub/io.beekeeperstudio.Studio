@@ -10,7 +10,8 @@ finish-args:
   - --device=dri
   - --share=ipc
   - --share=network
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --talk-name=org.freedesktop.Notifications
 modules:
   - name: beekeeper-studio
@@ -53,7 +54,7 @@ modules:
         only-arches: [x86_64]
         url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.6.2/Beekeeper-Studio-4.6.2.AppImage
         sha512: bdc0cccdd0bc5022e8ee852cb3a93bb362142c2ba88893af7b4d05e4433a87620e85c9190796d108fd5153f64ff86dc9fb0a727ac55faf7a47cf2994ee38d2cc
-        dest_filename: Beekeeper-Studio.AppImage
+        dest-filename: Beekeeper-Studio.AppImage
         x-checker-data:
           type: json
           url: https://api.github.com/repos/beekeeper-studio/beekeeper-studio/releases/latest
@@ -65,7 +66,7 @@ modules:
 
         url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.6.2/Beekeeper-Studio-4.6.2-arm64.AppImage
         sha512: d662f824eb5ec5d5db1bf8f1791fb54e07436810bcdf843c853327897a027b547e9bcfe8ebdc9b6db1220464344b0664eabc03661d78058bd4d64c2991a3433f
-        dest_filename: Beekeeper-Studio.AppImage
+        dest-filename: Beekeeper-Studio.AppImage
         x-checker-data:
           type: json
           url: https://api.github.com/repos/beekeeper-studio/beekeeper-studio/releases/latest
