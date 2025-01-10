@@ -8,7 +8,22 @@
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0</project_license>
     <developer_name>Beekeeper Studio, Inc</developer_name>
-
+    <keywords>
+        <keyword>Database</keyword>
+        <keyword xml:lang="de">Datenbank</keyword>
+        <keyword xml:lang="fr">base</keyword>
+        <keyword xml:lang="fr">données</keyword>
+        <keyword xml:lang="sp">datos</keyword>
+        <keyword xml:lang="ru">База</keyword>
+        <keyword xml:lang="ru">данных</keyword>
+        <keyword xml:lang="uk">даних</keyword>
+        <keyword translate="no">MYSQL</keyword>
+        <keyword translate="no">SQL</keyword>
+        <keyword translate="no">SQLite</keyword>
+        <keyword translate="no">Server</keyword>
+        <keyword translate="no">db</keyword>
+    </keywords>
+        
     <description>
         <p>A modern, easy to use, and good looking SQL client for MySQL, Postgres, SQLite, SQL
             Server, and more.</p>
