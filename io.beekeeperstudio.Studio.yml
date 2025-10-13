@@ -53,8 +53,8 @@ modules:
     sources:
       - type: file
         only-arches: [x86_64]
-        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.4.1/Beekeeper-Studio-5.4.1.AppImage
-        sha512: 6b17653415547170ad7ecb04853c603ab9a63d02e141f9617a6373e8a570e6ff15c1ecd4ebb7de56818fa608959b04753a569dd30e0b013347b2be20ae06a8e3
+        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.4.2/Beekeeper-Studio-5.4.2.AppImage
+        sha512: c9f7fcdfbbfe5131bf9049d5a5a45a17f3535b17e22c81dd50ebbe5fcca9e84c7eaac172c0d5e61796547e81fa95c28de8440214b30cca6129da714dbd3f7366
         dest-filename: Beekeeper-Studio.AppImage
         x-checker-data:
           type: json
@@ -65,8 +65,8 @@ modules:
       - type: file
         only-arches: [aarch64]
 
-        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.4.1/Beekeeper-Studio-5.4.1-arm64.AppImage
-        sha512: 4f1f50fa9684fe35659e99e216c6d8aff304da86282aced8d1e8a18251824ff263a0b971584d5fa89e7f6d1db308f82bb555e6f24bc5eb7258e842f2cd787f6b
+        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.4.2/Beekeeper-Studio-5.4.2-arm64.AppImage
+        sha512: 46f7867511f9aec3b036fad3483f3b0b0e143fed2cda54525e8c030583096ff12f74ca5f1d8f1a9ad3a25412a81b5211594be5dd1e067c622e840f533c32291f
         dest-filename: Beekeeper-Studio.AppImage
         x-checker-data:
           type: json
