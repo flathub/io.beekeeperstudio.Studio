@@ -53,8 +53,8 @@ modules:
     sources:
       - type: file
         only-arches: [x86_64]
-        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.8.0/Beekeeper-Studio-5.8.0.AppImage
-        sha512: cf16d28b192493746518907d7bf79d54a490f119932e49d77cf891be52bbcd06c9c8e2e1e7454e4da7aa45afd8fedb467aa9845154b918999305646771f9109b
+        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.8.1/Beekeeper-Studio-5.8.1.AppImage
+        sha512: 4d247acd377ba183f2e690d080153214df1cbd475d122d54aa8ab34e275150b88d6c0502a4c9526793daf4696fe7dad8496e36fd5a245fd8282edff659643a03
         dest-filename: Beekeeper-Studio.AppImage
         x-checker-data:
           type: json
@@ -65,8 +65,8 @@ modules:
       - type: file
         only-arches: [aarch64]
 
-        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.8.0/Beekeeper-Studio-5.8.0-arm64.AppImage
-        sha512: fe5e8a01248b5f17cde9038c99424d7021a6568af6534d5fd2b3f396a1d779c7666741069c9961ef7069acd03386c5a94176e08882b3845f88ba25d37565d35a
+        url: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.8.1/Beekeeper-Studio-5.8.1-arm64.AppImage
+        sha512: c89ee5f432428cb8bba4642f0e6daca6ca4ac25a8686d6dc1a752307cc8e336740daa062489ec8ff6db2e4ec32815362c7c3e68458efaf5f1734e6f122645392
         dest-filename: Beekeeper-Studio.AppImage
         x-checker-data:
           type: json
